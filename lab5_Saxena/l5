@@ -1,0 +1,65 @@
+Q1. Describe the following ADT's:
+i. Lists: Lists are a sequence of elements linked with each other by a pointer. They are not indexable until visiting the preceding element
+ii. STack: A stack is an abstract data ttype that acts as a collection of elements. Operations involved with stacks include push, pop, and peek. Stacks can pop the most recently added element and push will add the element.
+iii. Queue: A queue is similar to a stack but is open on both ends. A queue follows a FIFO methodology since the data item stored will be accessed first.
+iv. Dictionary: a dictionary is an unordered set of unique keys and are indexed by keys that can be of any type.
+
+Q2. Given a sorted array with n items, how many times will the binary search compare elements?
+It will compared log(n) times. Binary searches compare the target values to the middle element array in a sorted list and search the other half until the entire search has been completed.
+
+Q3. Given an array with n items, how many times will the linear search compare elements? explain answers.
+It will compare the elements n times since a linear search looks at each element
+
+Q4. Give an example when using linear search woul dbe preferable over binary search.
+It would be more useful if the input items are not sorted, in that case linear search would be used. If one is given an unsorted array like a list of related items such as a grocery list, binary search would be more beneficial.
+
+Q5. Show the effect of the quicksort, from the lecture notes, on the following array. Show the array at the beginning of each level of calls. Mark the pivot of each sub-array
+*84* 37 93 82 98 27 63 73 93 27 75 55 45 8
+37 82 27 63 73 27 75 55 45 8 *84* 93 98 93
+*37* 82 27 63 73 27 75 55 45 8 *84* 93 98 93
+27 27 8 *37* 82 63 73 75 55 45 84 93 98 93
+*27* 27 8 37 82 63 73 75 55 45 84 93 98 93
+8 *27* 27 37 82 63 73 75 55 45 84 93 98 93
+8 27 27 37 *82* 63 73 75 55 45 84 93 98 93
+8 27 27 37 63 73 75 55 45 *82* 84 93 98 93
+8 27 27 37 55 45 63 73 75 82 84 93 98 93
+8 27 27 37 45 55 63 73 75 82 84 93 98 93
+8 27 27 37 45 55 63 73 75 82 84 93 98 93
+8 27 27 37 45 55 63 73 75 82 84 93 93 98
+8 27 27 37 45 55 63 73 75 82 84 93 93 98
+
+Q6. See the file d1.c from the lab directory. Display the list that is built. 
+3 24 06
+
+Q7. See the file  l1.py from the lab directory. Display the list thats built
+[13, [28, [24, [3, None]]]]
+
+Q8: Compile and run the file ptrs.c from the lab directory. Why are the 2 sets of output different? What's going on there?
+The two sets of output are different because the memory is initialized again and the contents of buffer are copied to s and the value of buffer doesn't change when adding the line "...who'e never been born yet"
+
+Q9: See the file hash.c from the lab directory. Display the resulting table.
+Jaga 24
+Jesse 78
+Cos 86
+Kate 28
+Nash 11
+Vera 99
+Bob 38
+
+Q10: From the table above, write a function called find, that takes a key and a reference to an integer, fills in the reference w/the appropriate value (if found), and returns 1 (true). If the key is not found, return 0 (false). You may assume that p_ans already points to a valid location. So:
+
+int find(char *key, int *p_ans)
+{
+
+	if(p_ans == key)
+	{
+		p_ans -> key;
+		return 1;
+	}
+	else
+		return 0;
+
+}
+
+
+}

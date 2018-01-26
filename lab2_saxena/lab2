@@ -1,0 +1,68 @@
+Lab 2 Questions
+Q1. Output:
+s3833@tux2:~$ find . -type f -mtime -2 -print
+./CS265/lab2/Bash/tmp/2at
+./CS265/lab2/Bash/tmp/Cat
+./CS265/lab2/Bash/tmp/at
+./CS265/lab2/Bash/tmp/bat
+./CS265/lab2/Bash/tmp/cat
+./CS265/lab2/Bash/tmp/chat
+./CS265/lab2/Bash/tmp/hat
+./CS265/lab2/Bash/tmp/hello
+./CS265/lab2/Bash/tmp/list
+./CS265/lab2/Bash/tmp/mat
+./CS265/lab2/Bash/spellExample
+./CS265/lab2/Bash/.hidden
+./CS265/lab2/Bash/Makefile
+./CS265/lab2/Bash/check.bash
+./CS265/lab2/Bash/eg.bash
+./CS265/lab2/Bash/getopts.bash
+./CS265/lab2/Bash/hello.c
+./CS265/lab2/Bash/ids
+./CS265/lab2/Bash/index.html
+./CS265/lab2/Bash/index2.html
+./CS265/lab2/Bash/list
+./CS265/lab2/Bash/loop_subshell.bash
+./CS265/lab2/Bash/out.bash
+./CS265/lab2/Bash/outline.html
+./CS265/lab2/Bash/rv.bash
+./CS265/lab2/Bash/args.bash
+./CS265/lab2/Bash/breadIsDangerous.txt
+./CS265/lab2/Bash/func.bash
+./CS265/lab2/Bash/hello
+./CS265/lab2/Bash/isatty.bash
+./CS265/lab2/Bash/makefile
+./CS265/lab2/Bash/setVars
+./CS265/lab2/Bash/msg
+Q2. find . -type f -name \*.bash is the command to find all files that end in .bash
+Q3. output of all files that end in .bash
+ ./CS265/lab1/hello.bash
+./CS265/lab1/play/hello.bash
+./CS265/hello.bash
+./CS265/lab2/Bash/check.bash
+./CS265/lab2/Bash/eg.bash
+./CS265/lab2/Bash/getopts.bash
+./CS265/lab2/Bash/loop_subshell.bash
+./CS265/lab2/Bash/out.bash
+./CS265/lab2/Bash/rv.bash
+./CS265/lab2/Bash/args.bash
+./CS265/lab2/Bash/func.bash
+./CS265/lab2/Bash/isatty.bash
+./lab1/Unix/hello.bash
+./lab1/Unix/streams.bash
+./lab1/hello.bash
+./tmp/gotMe.bash
+Q4. characters, words, & lines 
+as3833@tux2:~/CS265/lab2$ wc -m breadIsDangerous.txt
+1531 breadIsDangerous.txt
+as3833@tux2:~/CS265/lab2$ wc -l breadIsDangerous.txt
+55 breadIsDangerous.txt
+as3833@tux2:~/CS265/lab2$ wc -w breadIsDangerous.txt
+90 breadIsDangerous.txt 
+Q5. grep -is "the" breadIsDangerous.txt|wc -l
+1
+Q6. The spelling mistakes are all corrected
+Q7. The output showed the lines with the spelling error and the lines with the corrected spelling.
+Q8. This output showed the message with the corrected spelling
+Q9. 0 indicates that the command was successful, 1 indicates that the previous command was unsuccessful. 2 indicates that the command was not used properly so for "noSuchFile", there was a misuse of shell builtins
+Q10. 

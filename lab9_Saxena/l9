@@ -1,0 +1,13 @@
+Q1. What happened when you ran bug3? Use ls -ot, see if there are any new files in your directory.
+Bug3 ran and asked user to enter a string. The result when the string was entered was a segmentation fault. It also created a file called core.
+Q2. In which function did it bomb?
+In the main function
+Q3. For each, below, record what the problem was and how you fixed it.
+ 
+ a. bug1.c--a common bug in c. This was fixed by changing to 'scanf( "%d",*n);'
+ b. bug2.c- This was fixed by making %d for integers and %f for doubles
+ c. bug3.c was tested with in.bug3 as input  
+ d.avg.c was an example use of assert- This was fixed by changing n to &n in scanf
+
+Q4.The compiler can't catch this because the issue is in memory so the gcc cannpt catch it
+Q5. If qsort is used to sort integers and accidentally pass the string comparison function, there will be an error

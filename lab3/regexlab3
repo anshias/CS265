@@ -1,0 +1,13 @@
+1. I will be using grep
+grep 'the' bright_side_of_life matches all lines that contain the string 'the'
+2. grep -w bright_side_of_life  matches all lines that contain the entire word 'the', not just as a part of a word
+3. grep 'Just' bright_side_of_life finds all lines that contain the word 'Just'
+4. grep -i 'just' bright_side_of_life finds all lines that contain the word 'just' or 'Just' and allow an insensitive word search
+5. grep -i '^just' bright_side_of_life gave all the lines that start with the word 'just' or 'Just' 
+6. grep -w [b^m]ad bright_side_of_life matches all lines that contain the word bad or mad
+7. egrep '(br|d)eath' bright_side_of_life matches all lines that contain the words breath or death
+8.egrep '[Yy]ou[[:punct:]]$' bright_side_of_life matches all lines that end in You or you and may be followed by punctuation
+9.grep '^[[:space:]]' bright_side_of_life matches all lines that begin with a whitespace
+10.grep '^$' bright_side_of_life matches all blank lines
+11.  grep -c '^$' bright_side_of_life counts the number of blank lines
+  

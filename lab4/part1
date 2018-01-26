@@ -1,0 +1,102 @@
+-1.
+int smaller(char *s, char *t) {
+ if (strcmp(s, t) < 1)
+ return 1;
+ else
+ return 0;
+}
+This function doesn't take into account if s is below t
+instead one can use a while loop:
+
+1-2.
+
+{while (*s==*t) {
+    if (*s=='\0')
+	return ( 0 );
+++s ; ++t ;
+if (*s>*t) return (1) ;
+return ( -1 );
+}
+
+This while loop does a better job of considering all 3 conditions: if s or t is higher or if theyre equal
+
+1-4. 
+improvement:
+
+if ( !(c = 'y' || c == 'Y') )
+	return 1;
+
+*length = (*length < BUFSIZE) ? length : BUFSIZE;
+
+*flag = *flag ? 0 :1;
+
+quote = (line == ' " ') ? 1 : 0 ;
+
+if (val && 1)
+	bit = 1;
+else
+	bit = 0;
+1-5.
+improvement:
+int read(int *ip) {
+	scanf ("%d", &ip) ;
+	return *ip;
+}
+    ...
+insert(&graph[vertl , read(&val) , read(&ch)) ;
+
+1-6.
+outputs:
+
+1
+2
+3
+
+1-7.
+
+switch (istty) 
+{
+	case (stdin);
+	case (stdout);
+	case (stderr);
+break;
+{
+return(0);
+}}
+ 
+if (retval != SUCCESS)
+	return (retval) ;
+}
+else {
+	/a All went well ! a/
+return SUCCESS; 
+}
+
+for (k = 0; k++ < 5; x += dx)
+	scanf ("%lf" , &dx) ;
+
+1-8.
+
+for( count = 0; count <total, count++)
+if (this.getName(count) == nametable.userName() {
+return (true);
+}
+
+1-9.
+
+#defineISDIGIT(c) c*c
+c = 0;
+cc = 9;
+
+1-10.
+
+#define FTZMETER 0.3048f
+#define METERZFT 3.28084f
+#define MIZFT 5280.0f
+#define MIZKM 1.609344f
+#define SQMIZSQKM 2.589988f
+
+1-11.
+
+// this line, commented on by the comment, does not say that it would return 1 or 0
+

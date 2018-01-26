@@ -1,0 +1,23 @@
+1. add() and addSuffix() are adding to different lists. addSuffix adds the suffix to the State, while add() adds the word to the suffix lists, and updates the prefix.
+
+2. lookup() searches for the prefix, and creates one in the state table if needed. It returns a pointer if present or created, and return null otherwise. Functions that call lookup are add, generate.
+
+9. Prefixes are stored in a double ended queue (deque). Reallocations are more expensive with a vector than with a deque, especially with very long sequences, such as those used in this program. The elements of a deque are also scattered in different chunks, but each element is still easily accessed through an iterator; these is much more difficult to do with a vector, and therefore the reason a deque was chosen, since it allowed for elements to be scattered throughout the structure, and allows for easy reallocation.
+
+10. The map structure, with the prefix as the key, and the suffix as the value, replaces the hash table as the dictionary.
+
+11. The list of suffices are stored as a vector of strings, then inserted to their matching prefixes in the state table.
+
+12. In C++, there are more complex structures available to use: such as the sequel structure, or the map structure, making the storage and access of the prefixes and suffices much easier.
+
+13. C is able to support variable sized arrays, which are much easier to allocate. C gives better control over what happens when code is executed. 
+
+14. Prefixes are read, and immediately stored into the state table.
+
+15. Prefixes and Suffices are also read and directly stored into the state table, literally a dictionary structure in python.
+
+16. Suffices are directly read into the state table. 
+
+17. It is faster and easier to create algorithms in Python versus C++, and the workflow is very concise. 
+
+18. Execution speed is higher for the C++ implementation.

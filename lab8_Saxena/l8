@@ -1,0 +1,23 @@
+Lab-Interfaces
+
+Q1.
+Describe what is meant by each of the following:
+i.   Hide implementaion details: to make it easier to make changes to the code without affecting the end user. It can also help hide badly written code
+ii. Choose a small orthogonal set of primitives: Doing this enables the functions to not overlap and be able to prvide as much functionality for interfaces
+iii. Don't reach behind a user's back: A function should not write any secret files or variables or be able to change any global data.
+iv: Do the same thing the same way everywhere: It should be transparent about changing any data in its caller
+
+Q2. What are the problems with the first implementatio in C?
+The commas within the quotes are not handled correctly and long input lines are not handled
+
+Q3.What things were improved upon in the first revision in C?
+ The quoted fields were improved
+
+Q4. What provlems does the first revision still have? Can you parse 2 different CSV files at the same time? Explain.
+The first revision is unable to read the CSV file from the input.
+
+Q5.Does the C++ implementation solve these problems? What issues still remain?
+The C++ implementation didn't solve the problem.  The issue is that there was no parameter made or given to read the CSV file.
+Q6.Does the interface for the C++ implementation adhere to our guidelines for a good i/f from lecture?
+The code does a successfully hide the implementation details and chooses a small othogonal set of primitives and doesn't reach behind the person's back. 
+Q7. Implementation of java version of CSV library 
